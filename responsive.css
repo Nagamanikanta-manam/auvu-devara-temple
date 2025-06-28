@@ -1,0 +1,89 @@
+@media only screen and (max-width: 500px){
+    .slider img {
+        width: 100%;
+        background-color: black;
+        height: auto;
+    }
+    .subheading h4 {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 27.6px;
+    }
+    .timings {
+        margin-top: 30px;
+    }
+    .date{
+        font-size: 22px;
+        line-height: 32px;
+        
+    }
+    .times{
+        display: flex;
+    }
+    .breakfast{
+        margin-top: -50px;
+    }
+    h3, .h3 {
+        font-size: 20px;
+    }
+    .times i {
+        font-size: 25px;
+        padding: 9px;
+    }
+    .times {
+        padding: 8px;
+    }
+    .photo img{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .marquee ul li {
+        font-size: 12px;
+        color: #fff;
+    }
+    .footerdes h4 {
+        padding: 12px;
+    }
+    .scanner img {
+        margin-top: 0px;
+        width: 60px;
+    }
+    .text-white {
+        color: #fff !important;
+        font-size: 13px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .time {
+        background-color: #d1e5f5;
+        color: black;
+    }
+    
+    .donors{
+        background-image: url(images/donor.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .subheading{
+        background-image: url(images/bgheading.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .times h3{
+        font-size: 16px;
+    }
+}
+
