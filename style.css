@@ -1,115 +1,224 @@
-*{
-    margin:0px ;
+* {
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     max-width: 100%;
     font-family: 'Tiro Telugu', serif !important;
     overflow-x: hidden;
 }
 
 
-.slider img{
+.slider img {
     width: 100%;
     background-color: black;
     height: 85vh;
 
 }
-.heading h3{
+
+.heading h3 {
     padding: 20px;
     font-weight: 600;
     line-height: 38px;
 }
-.slide{
+
+.slide {
     width: 100%;
     display: flex;
-    
+
 }
-.swiper .swiper-button-prev, .swiper .swiper-button-next{
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
     color: #fff;
 }
-.swiper .swiper-pagination-bullet-active{
+
+.swiper .swiper-pagination-bullet-active {
     background-color: #fff;
 }
-.subheading h4{
+
+.subheading h4 {
     padding: 30px;
     font-size: 20px;
     font-weight: 500;
     line-height: 28.6px;
 }
-.title{
+
+.title {
     margin-top: 18px;
 }
-.timelines{
+
+.timelines {
     margin-top: 30px;
 }
-.time{
+
+.time {
     background-color: #dddddd;
 }
 
-.times{
+.times {
     padding: 35px;
 }
-.times i{
-    font-size:25px;
+
+.times i {
+    font-size: 25px;
 }
-.timess{
-    background-color:  #FFFFD2;
+
+.timess {
+    background-color: #FFFFD2;
 }
-.mukya h1{
+
+.mukya h1 {
     margin-top: 20px;
 }
-.marquee ul{
+
+.marquee ul {
     list-style: none;
 }
-.marquee ul li{
-   font-size: 24px;
+
+.marquee ul li {
+    font-size: 24px;
 }
-.footer{
+
+.footer {
     background-color: black;
 }
-.footerdes h4 span{
+
+.footerdes h4 span {
     font-size: 40px;
     color: #fff;
 }
-.footerdes h4{
+
+.footerdes h4 {
     padding: 20px;
 }
-.scanner img{
+
+.scanner img {
     margin-top: -70px;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
-.timelines{
+
+.timelines {
     background-image: url(images/bg-1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.donors{
+
+.donors {
     background-image: url(images/donor.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     color: #fff;
     margin-top: 40px;
     margin-bottom: 20px;
 }
-.title{
+
+.title {
     font-size: 18px;
     line-height: 25px;
 }
-.donations{
+
+.donations {
     background-image: url(images/donors2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     color: #fff;
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
 
+@media (max-width: 768px) {
+    .sthala-wrap {
+        position: relative;
+        max-height: 240px;
+        /* how much to show initially */
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .sthala-wrap::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+        /* fade height */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+        pointer-events: none;
+    }
+
+    .sthala-wrap.expanded {
+        max-height: none;
+    }
+
+    .sthala-wrap.expanded::after {
+        display: none;
+    }
+
+    .sthala-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+        padding: 8px 14px;
+        border: 1px solid #ddd;
+        border-radius: 999px;
+        background: #fff;
+        font-weight: 600;
+    }
+}
+
+/* Pro card for the video */
+.sthala-video-card {
+    max-width: 980px;
+    margin: 18px auto 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    background: #000;
+}
+
+.sthala-video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* modern responsive way */
+    background: #000;
+}
+
+.sthala-video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* spacing harmony with the section */
+.sthala-video-heading {
+    font-weight: 700;
+    margin: 10px 0 8px;
+}
+
+/* Keep things tight on mobile */
+@media (max-width: 768px) {
+    .sthala-video-card {
+        margin-top: 14px;
+        border-radius: 14px;
+    }
+}
+
+/* (If you used the read-more CSS earlier) make sure button spacing is nice */
+.sthala-toggle {
+    margin-top: 12px;
+}
